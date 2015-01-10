@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+        <title>JavaScript Tutorial</title>
+        <!-- Link to External Javascript -->
+        <script language="javascript" type="text/javascript" src="addFunction.js"></script>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            document.write(Number.MAX_VALUE+"<br />");
+            document.write(Number.MIN_VALUE+"<br />");
+            
+            var samp_str = "Here are some escaped characters \" \' \\ \t \n";
+            document.write(samp_str);
+            
+            var first_str = "First String";
+            var second_str = "Second String";
+            var combined = first_str + second_str;
+            document.write(combined+"<br />");
+            document.write("Lenght of the string: "+ combined.length +"<br />");
+            document.write("Substring: "+combined.substring(6,12)+"<br />");
+            document.write("Last Character: "+combined.charAt(combined.length-1)+"<br />");
+            document.write("Index of S is "+combined.indexOf('s')+"<br />");
+            
+            var str_var = "5";
+            var num_var = "10";
+            var total = num_var + str_var;
+            var mult_total = num_var*str_var;
+            document.write("5+10 = "+total+ "<br />");
+            document.write("5*10 = "+mult_total+ "<br />");
+            total = num_var + Number(str_var);
+            document.write("5+10 = "+total+ "<br />");
+            total = String(num_var) + str_var;
+            document.write("String Addition 5+10 = "+total+ "<br />");
+            
+            var float_var = 5.2859397530214;
+            var float_str = float_var.toFixed(5);
+            
+            document.write("The shorter form of "+float_var+" is "+float_str+"<br />");
+            document.write("Then the integer is "+parseInt(float_var)+"<br />");
+            document.write("The data type of float_str: "+typeof(float_str)+"<br />");
+            document.write("The data type of float_var: "+typeof(float_var)+"<br />");
+            
+            var bool_var = Boolean(13);
+            document.write(String(bool_var));
+            
+            var vehicles = new Array("car","truck","van");
+            document.write("The second item is: "+vehicles[1]+"<br />");
+            for(i in vehicles){
+                document.write("The value of vehicles is: "+vehicles[i]+"<br />")
+            }
+            
+            var rand_var = (5 > 10) ? "5 is less than 10" : "5 is greater than 10";
+            document.write("The value of rand_var is: "+rand_var+ "<br />");
+            
+            if (5 > 10){
+                document.write("5 is greater than 10"+"<br />");
+            }else{
+                document.write("This is not gonna be printed on the screen");
+            }
+            
+            var state = "Michigan";
+            switch(state){
+                    case "California":
+                    document.write("We are on California"+"<br />");
+                        break;
+                    case "Michigan":
+                        document.write("We are on Michogan with Alaina"+"<br />");
+                        break;
+            }
+            
+            var count = 1;
+            while (count <= 10){
+                if (count == 6){
+                    break;
+                }
+                if(count % 2){
+                    count++;
+                    continue;
+                }
+                document.write("The value of count in while is: "+count+"<br />");
+                count++;
+            }
+            
+            count = 10;
+            do{
+                document.write("The value of count in do while is: "+count+"<br />");
+                count--;
+            }while(count > 10);
+            
+            for(var count = 0; count <= 10; count++){
+                document.wrrite("The value of count in for is: "+count+"<br />");
+            }
+            document.write("5+10 = "+"<br />");
+        </script>
+        <noscript>
+            <h3>This site requires javascript</h3>
+        </noscript>
+    </body>
+</html>
