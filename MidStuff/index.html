@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" charset="utf-8" content="text/html";>
+        <title>JavaScript and Cool Stuff</title>
+        <style>
+            #h3style{
+                color: gray;
+            }
+        </style>
+    </head>
+    <body onResize="changeBody();" onload="alert('Webstite Loaded');" onclick="bodyClick();">
+        <script>
+            function changeBody(){
+                document.getElementById(jsImage).style.height="35%";
+                document.getElementById(jsImage).style.width="35%";
+                return true;
+            }
+        </script>
+        <noscript>
+            <p>You need JavaScript enabled for load this WebSite</p>
+        </noscript>
+        <img src="javascript.png" id="jsImage" onClick="alertme();" onDblClick="alert('You double clicked me!!')" />
+    </body>
+</html>

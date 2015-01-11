@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta lang="en" http-equiv="content-type" charset="utf-8">
+        <title>JavaScript POO</title>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+        
+            function Animal() {
+                this.name = "No Name";
+                this.sound = "Grr";
+                this.owner = "No Owner";
+            }
+            
+            Animal.prototype.setOwner = function(newOwner){
+                if(typeof newOwner != 'undefined'){
+                    this.owner = newOwner;
+                } else{
+                    document.write("Please Write a name");
+                }
+            }
+            
+            Animal.prototype.getOwner = function(){
+                return this.owner;
+            }
+            
+        </script>
+        <noscript>
+            <h3>This Web Requires JavaScript</h3>
+        </noscript>
+    </body>
+</html>
